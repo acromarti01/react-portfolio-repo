@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Form from '../components/Contact';
+import ContactForm from '../components/Contact';
 
 
 const Contact = () => {
   return (
-    <Form />
+    <ContactForm />
   );
 };
 

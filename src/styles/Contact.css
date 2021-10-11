@@ -1,10 +1,65 @@
-.form {
-    margin: 20px;
-  }
-  
-  .form input {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.main-container
+{
     width: 100%;
-  }
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container
+{
+    height: 80%;
+    width: 80%;
+    background-color: yellow;
+}
+
+.title-container
+{
+    background-color: purple;
+    width:100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form 
+{    
+    background-color: orange;
+    width:45%;
+    height: 85%;
+}
+
+.name-container
+{
+    
+    width: 100%;
+}
+
+.nameInput-container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+}
+  
+.nameInput-container input 
+{
+    display: block;
+    width: 200px;
+}
+
+.email-container input 
+{
+    display: block;
+    width: 100%;
+}
+
+.message-container input
+{
+    display: block;
+    width: 100%;
+    height: 40vh;
+}
