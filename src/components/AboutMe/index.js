@@ -4,8 +4,8 @@ import '../../styles/AboutMe.css';
 
 const AboutMe = () => {
   return (
-    <div>
-        
+    <div className="main-container">
+
     </div>
   );
 }
