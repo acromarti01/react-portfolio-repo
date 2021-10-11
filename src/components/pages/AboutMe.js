@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../styles/AboutMe.css';
+import '../../styles/AboutMe.css'
 
 
-const AboutMe = () => {
+export default function AboutMe() {
     return (
         <div className="main-container">
             <div className="inner-container">
@@ -32,4 +32,4 @@ const AboutMe = () => {
     );
 }
 
-export default AboutMe;
+

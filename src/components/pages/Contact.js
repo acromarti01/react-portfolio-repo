@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/Contact.css';
+//import '../../styles/Contact.css';
 
 function ContactForm() {
     // Here we set two state variables for firstName and lastName using `useState`
@@ -7,13 +7,29 @@ function ContactForm() {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [status, setStatus] = useState('');
 
-    const handleInputChange = (e) => {
+    const handleEmailChange = (e) => {
         // Getting the value and name of the input which triggered the change
-        const { name, value } = e.target;
+        const { value } = e.target;
 
         // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-        return name === 'firstName' ? setFirstName(value) : setLastName(value);
+        return value === '' ? setStatus(value) : setStatus(value);
+    };
+
+    const handleNameChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { name, value } = e.target;
+        name === 'firstName' ? setFirstName(value) : setLastName(value)
+        value === '' ? setStatus() : setStatus("YES")
+       
+
+        // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+     
+            
+        
+
+        
     };
 
     const handleFormSubmit = (e) => {
@@ -36,22 +52,20 @@ function ContactForm() {
                     <div className="name-container">
                         <p>Name</p>
                         <div className="nameInput-container">
-                            <div className="input-container">
+                            <div>
                                 <input
-                                    className="nameBox"
                                     value={firstName}
                                     name="firstName"
-                                    onChange={handleInputChange}
+                                    onChange={handleNameChange}
                                     type="text"
                                     placeholder="First Name"
                                 />
                             </div>
-                            <div className="input-container">
+                            <div>
                                 <input
-                                    className="nameBox"
                                     value={lastName}
                                     name="lastName"
-                                    onChange={handleInputChange}
+                                    onChange={handleNameChange}
                                     type="text"
                                     placeholder="Last Name"
                                 />
@@ -60,11 +74,11 @@ function ContactForm() {
                     </div>
                     <div className="email-container">
                         <p>Email</p>
-                        <div className="input-container">
+                        <div>
                             <input
                                 value={email}
                                 name="email"
-                                onChange={handleInputChange}
+                                onChange={handleEmailChange}
                                 type="text"
                                 placeholder="Email Address"
                             />
@@ -72,18 +86,19 @@ function ContactForm() {
                     </div>
                     <div className="message-container">
                         <p>Message</p>
-                        <div className="input-container">
+                        <div>
                             <input
                                 value={message}
                                 name="message"
-                                onChange={handleInputChange}
+                                
                                 type="text"
                             />
                         </div>
-
                     </div>
-
-
+                    <div className="status">
+                        <p>{status}</p>
+                        <p>Hello {firstName} {lastName}</p>
+                    </div>
                     <button type="button" onClick={handleFormSubmit}>
                         Submit
                     </button>
@@ -97,3 +112,4 @@ function ContactForm() {
 }
 
 export default ContactForm;
+
