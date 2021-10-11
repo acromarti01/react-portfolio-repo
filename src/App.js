@@ -1,25 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// We import our HelloDiv from the components folder
+import SideNav from "./components/SideNav";
 
+// App is our top-level main component that references other components
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Today
-        </a>
-      </header>
-    </div>
-  );
+  return <SideNav />;
 }
 
 export default App;
