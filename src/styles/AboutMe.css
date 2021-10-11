@@ -1,0 +1,53 @@
+.main-container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container
+{
+    height: 80%;
+    width: 80%;
+    background-color: yellow;
+}
+
+.title-container
+{
+    background-color: purple;
+    width:100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container
+{
+    background-color: brown;
+    width:100%;
+    height: 30%;
+}
+
+.description-container
+{
+    background-color: orange;
+    width:100%;
+    height: 55%;
+}
+
+.title-container p
+{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.description-container p
+{
+    color: white;
+    font-size: 18px;
+}
