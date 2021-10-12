@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/AboutMe.css'
+import pro from '../../images/professional-pic.jpg';
 
 
 export default function AboutMe() {
@@ -9,7 +10,9 @@ export default function AboutMe() {
                 <div className="title-container">
                     <p>about me</p>
                 </div>
-                <div className="image-container"></div>
+                <div className="image-container">
+                    <img className="professional-pic" src={pro} />
+                </div>
                 <div className="description-container">
                     <p className="bio">
                         I am a student at Rice University Coding Boot Camp currently living in Houston, Texas. I graduated from

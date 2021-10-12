@@ -1,23 +1,26 @@
+:root
+{
+    --deep-aqua: #003B46;
+    --ocean: #07575B;
+    --wave: #66A5AD;
+    --sea-foam: #C4DFE6;
+    --light-night: #295161;
+    --dark-night: #02070d;
+}
 .main-container
 {
     width: 100%;
-    height: 100vh;
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;   
 }
 
 .inner-container
 {
     height: 80%;
     width: 80%;
-    background-color: yellow;
 }
 
 .title-container
 {
-    background-color: purple;
     width:100%;
     height: 15%;
     display: flex;
@@ -25,9 +28,23 @@
     align-items: center;
 }
 
+.subtitle
+{
+    color: white;
+    text-transform: capitalize;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+.status
+{
+    color: white;
+    text-transform: capitalize;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
 .form 
 {    
-    background-color: orange;
     width:45%;
     height: 85%;
 }

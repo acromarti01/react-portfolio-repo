@@ -12,30 +12,32 @@ function ContactForm() {
   const handleInputNameChange = (e) => {
     const { name, value } = e.target;
     name === 'firstName' ? setFirstName(value) : setLastName(value);
-    value === '' ? setStatus('Missing Information') : setStatus("");
+    (firstName === '' || lastName  === '') ? setStatus('missing information') : setStatus("");
   };
 
   const handleInputEmailChange = (e) => {
     const { value } = e.target;
     const testFormat = (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(value));
     setEmail(value);
-    !testFormat ? setStatus("Invalid Email") : setStatus("");
+    !testFormat ? setStatus("your email is invalid") : setStatus("");
   };
 
   const handleInputMessageChange = (e) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
     setMessage(value);
-    value === '' ? setStatus('Missing Information') : setStatus("");
+    value === '' ? setStatus('missing information') : setStatus("");
   };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
+    console.log(firstName, lastName, email, message);
+
     // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
+    //alert(`Hello ${firstName} ${lastName}`);
+    //setFirstName('');
+    //setLastName('');
   };
 
   return (
@@ -46,7 +48,7 @@ function ContactForm() {
         </div>
         <form className="form">
           <div className="name-container">
-            <p>Name</p>
+            <p className="subtitle">name:</p>
             <div className="nameInput-container">
               <div>
                 <input
@@ -69,7 +71,7 @@ function ContactForm() {
             </div>
           </div>
           <div className="email-container">
-            <p>Email</p>
+            <p className="subtitle">email:</p>
             <div>
               <input
                 value={email}
@@ -81,7 +83,7 @@ function ContactForm() {
             </div>
           </div>
           <div className="message-container">
-            <p>Message</p>
+            <p className="subtitle">message:</p>
             <div>
               <textarea
                 value={message}
@@ -91,16 +93,13 @@ function ContactForm() {
               />
             </div>
           </div>
-          <div className="status">
-            <p>{status}</p>
+          <div>
+            <p className="status">{status}</p>
           </div>
           <button type="button" onClick={handleFormSubmit}>
             Submit
           </button>
         </form>
-
-
-
       </div>
     </div>
   );
