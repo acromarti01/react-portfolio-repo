@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/AboutMe.css'
-import pro from '../../images/professional-pic.jpg';
+import professionalPic from '../../images/professional-pic.jpg';
 
 
 export default function AboutMe() {
@@ -11,7 +11,7 @@ export default function AboutMe() {
                     <p>about me</p>
                 </div>
                 <div className="image-container">
-                    <img className="professional-pic" src={pro} />
+                    <img className="professional-pic" src={professionalPic} />
                 </div>
                 <div className="description-container">
                     <p className="bio">

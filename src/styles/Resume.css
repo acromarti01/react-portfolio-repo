@@ -1,0 +1,18 @@
+.front-end-list, .back-end-list
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.front-end-list li
+{
+    color:white;
+    list-style: circle;
+    margin-left:30px;
+}
+.back-end-list
+{
+    color:white;
+    list-style: circle;
+    margin-left:30px;
+}
