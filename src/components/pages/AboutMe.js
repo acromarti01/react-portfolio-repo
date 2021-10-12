@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/AboutMe.css'
-import professionalPic from '../../images/professional-pic.jpg';
+import professionalPic from '../../assets/images/professional-pic.jpg';
 
 
 export default function AboutMe() {

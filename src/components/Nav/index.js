@@ -23,6 +23,15 @@ export default function Nav({ currentPage, handlePageChange }) {
             </li>
             <li className="links">
               <a
+                href="#portfolio"
+                onClick={() => handlePageChange('Portfolio')}
+                className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+              >
+                Portfolio
+              </a>
+            </li>
+            <li className="links">
+              <a
                 href="#contact"
                 onClick={() => handlePageChange('Contact')}
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}

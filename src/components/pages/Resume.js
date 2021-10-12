@@ -9,6 +9,8 @@ export default function Resume() {
                 <div className="title-container">
                     <p>Resume</p>
                 </div>
+                {/* <p>Download my <a href="../../assets/docs/AnthonyCromartie_CV2.pdf" download>resume</a></p> */}
+                <p className="download-resume">Download my resume</p>
                 <div>
                     <p className="subtitle">Front-end Proficiencies</p>
                     <ul className="front-end-list">

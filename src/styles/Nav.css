@@ -11,7 +11,7 @@ header
 {
     width: 100%;
     height: 150px;
-    background-image: url("../images/meteor-shower.jpg");
+    background-image: url("../assets/images/meteor-shower.jpg");
     background-size: cover;
     background-position: center;  
     display: flex;
