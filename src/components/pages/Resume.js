@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Resume.css'
+import resumeIcon from '../../assets/images/icons/resume-light-32px.png'
 
 
 export default function Resume() {
@@ -9,8 +10,13 @@ export default function Resume() {
                 <div className="title-container">
                     <p>Resume</p>
                 </div>
-                {/* <p>Download my <a href="../../assets/docs/AnthonyCromartie_CV2.pdf" download>resume</a></p> */}
-                <p className="download-resume">Download my resume</p>
+                <div className="resume-link-container">
+                <p className="download-resume">View my</p>
+                <a href="https://docs.google.com/document/d/1TLqti3-iu9jxoKOcekPNUaVEM1h5wyra/edit?usp=sharing&ouid=106100799987657497926&rtpof=true&sd=true" target="_blank">
+                            <img className="resume-icon" src={resumeIcon} alt="Resume Icon" />
+                        </a>
+                </div>
+                
                 <div>
                     <p className="subtitle">Front-end Proficiencies</p>
                     <ul className="front-end-list">

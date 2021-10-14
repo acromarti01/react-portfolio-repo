@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../../styles/Footer.css';
-import gitHubIcon from '../../assets/images/GitHub-Mark-Light-64px.png'
-import linkedinIcon from '../../assets/images/linkedin-light-64px.png';
-import stackoverflowIcon from '../../assets/images/stackoverflow-light-64px.png'
+import gitHubIcon from '../../assets/images/icons/github-mark-light-64px.png'
+import linkedinIcon from '../../assets/images/icons/linkedin-light-64px.png';
+import stackoverflowIcon from '../../assets/images/icons/stackoverflow-light-64px.png'
 
 
 export default function Footer() {
