@@ -1,0 +1,101 @@
+:root
+{
+    --deep-aqua: #003B46;
+    --ocean: #07575B;
+    --wave: #66A5AD;
+    --sea-foam: #C4DFE6;
+    --light-night: #295161;
+    --dark-night: #02070d;
+}
+
+.por-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 310px 310px 310px;
+
+    grid-gap:20px;
+}
+
+.item {
+	padding: 20px;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: white;
+}
+	
+.a1 {
+    background-image: url("../assets/images/last-moment-savers.png");
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+
+.a2 {
+    background-image: url("../assets/images/small-talk.png");
+    background-size: cover;
+    background-position: center; 
+}
+
+.a3 {
+    background-image: url("../assets/images/employee-tracker.png");
+    background-size: cover;
+    background-position: center; 
+}
+
+.a4 {
+    background-image: url("../assets/images/team-profile.png");
+    background-size: cover;
+    background-position: center; 
+}
+
+.a5 {
+    background-image: url("../assets/images/last-moment-savers.png");
+    background-size: cover;
+    background-position: center; 
+}
+
+.a6 {
+    background-image: url("../assets/images/last-moment-savers.png");
+    background-size: cover;
+    background-position: center; 
+}
+
+.img-description
+{
+    height: 200px;
+    width: 310px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap:hover .img-description
+{
+    visibility: visible;
+    opacity: .6;
+}
+
+.project-links
+{
+    opacity: 1;
+}
+
+.img-description:hover .project-links:hover
+{
+    opacity: 1;
+    color: var(--dark-night);
+    font-weight: bold;
+}

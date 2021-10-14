@@ -11,7 +11,7 @@ export default function AboutMe() {
                     <p>about me</p>
                 </div>
                 <div className="image-container">
-                    <img className="professional-pic" src={professionalPic} />
+                    <img className="professional-pic" src={professionalPic} alt="my professional pic" />
                 </div>
                 <div className="description-container">
                     <p className="bio">

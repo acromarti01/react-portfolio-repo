@@ -10,8 +10,9 @@
 .main-container
 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--dark-night);
+    /* background-color: white; */
     display: flex;
     justify-content: center;
 }
