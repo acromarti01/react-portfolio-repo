@@ -1,16 +1,28 @@
 import React, { useState } from 'react';
 import '../../styles/Footer.css';
-import linkedinPic from '../../assets/images/linkedin1.png';
+import gitHubIcon from '../../assets/images/GitHub-Mark-Light-64px.png'
+import linkedinIcon from '../../assets/images/linkedin-light-64px.png';
+import stackoverflowIcon from '../../assets/images/stackoverflow-light-64px.png'
 
 
 export default function Footer() {
     return (
         <div className="footer-container">
-            <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="anthony-c-07985b140" data-version="v1">
-                <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/anthony-c-07985b140?trk=profile-badge">
-                    <img className="linkedin-pic" src={linkedinPic} alt="linkedin icon" />
+            <div className="icon-container">
+                <a href="https://github.com/acromarti01">
+                    <img className="github-icon" src={gitHubIcon} alt="GitHub Icon" />
                 </a>
             </div>
+            <div className="icon-container">
+                <a href="https://www.linkedin.com/in/anthony-c-07985b140">
+                    <img className="linkedin-icon" src={linkedinIcon} alt="Linkedin Icon" />
+                </a>
+            </div>
+            <div className="icon-container">
+                <a href="https://stackoverflow.com/users/17146896/acromarti">
+                    <img className="stackoverflow-icon" src={stackoverflowIcon} alt="Stackoverflow Icon" />
+                </a>
+            </div>            
         </div>
     );
 }

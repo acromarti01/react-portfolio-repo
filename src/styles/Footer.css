@@ -1,4 +1,20 @@
+:root
+{
+    --deep-aqua: #003B46;
+    --ocean: #07575B;
+    --wave: #66A5AD;
+    --sea-foam: #C4DFE6;
+    --light-night: #295161;
+    --dark-night: #02070d;
+}
 .footer-container
 {
-    background-color: white;
+    background-color: var(--dark-night);
+    display: flex;
+    justify-content: center;
+}
+.icon-container
+{
+    padding-left: 20px;
+    padding-right: 20px;
 }
