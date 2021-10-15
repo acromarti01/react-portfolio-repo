@@ -2,42 +2,36 @@ import React, { useState } from 'react';
 import '../../styles/Contact.css';
 
 function ContactForm() {
-  // Here we set two state variables for firstName and lastName using `useState`
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
+  const checkForMissingInfo = (e) => {
+    const { value } = e.target;
+    (firstName === '' || lastName  === '' || email === '' || message === '') ? setStatus('missing information') : setStatus("");
+  }
+
   const handleInputNameChange = (e) => {
     const { name, value } = e.target;
     name === 'firstName' ? setFirstName(value) : setLastName(value);
-    (firstName === '' || lastName  === '') ? setStatus('missing information') : setStatus("");
   };
 
   const handleInputEmailChange = (e) => {
     const { value } = e.target;
     const testFormat = (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(value));
     setEmail(value);
-    !testFormat ? setStatus("your email is invalid") : setStatus("");
+    !testFormat ? setStatus("your email is invalid") : setStatus('');
   };
 
   const handleInputMessageChange = (e) => {
     const { value } = e.target;
     setMessage(value);
-    value === '' ? setStatus('missing information') : setStatus("");
   };
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
-
-    console.log(firstName, lastName, email, message);
-
-    // Alert the user their first and last name, clear the inputs
-    //alert(`Hello ${firstName} ${lastName}`);
-    //setFirstName('');
-    //setLastName('');
   };
 
   return (
@@ -55,6 +49,7 @@ function ContactForm() {
                   value={firstName}
                   name="firstName"
                   onChange={handleInputNameChange}
+                  onClick={checkForMissingInfo}
                   type="text"
                   placeholder="First Name"
                 />
@@ -64,6 +59,7 @@ function ContactForm() {
                   value={lastName}
                   name="lastName"
                   onChange={handleInputNameChange}
+                  onClick={checkForMissingInfo}
                   type="text"
                   placeholder="Last Name"
                 />
@@ -77,6 +73,7 @@ function ContactForm() {
                 value={email}
                 name="email"
                 onChange={handleInputEmailChange}
+                onClick={checkForMissingInfo}
                 type="text"
                 placeholder="Email Address"
               />
@@ -89,6 +86,7 @@ function ContactForm() {
                 value={message}
                 name="message"
                 onChange={handleInputMessageChange}
+                onClick={checkForMissingInfo}
                 type="text"
               />
             </div>

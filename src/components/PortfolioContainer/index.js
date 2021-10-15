@@ -5,6 +5,8 @@ import Portfolio from '../pages/Portfolio';
 import Contact from '../pages/Contact';
 import Resume from '../pages/Resume';
 import Footer from '../Footer';
+import frontEnds from '../../utils/frontEndProficiencies';
+import backEnds from '../../utils/backEndProficiencies';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -20,7 +22,7 @@ export default function PortfolioContainer() {
       return <Contact />;
     }
     if (currentPage === 'Resume') {
-      return <Resume />;
+      return <Resume frontEnds={frontEnds} backEnds={backEnds} />;
     }
     return <AboutMe />
   };
