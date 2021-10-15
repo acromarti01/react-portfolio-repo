@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-portfolio-repo/static/css/main.a617e044.chunk.css",
-    "main.js": "/react-portfolio-repo/static/js/main.a78442d0.chunk.js",
-    "main.js.map": "/react-portfolio-repo/static/js/main.a78442d0.chunk.js.map",
-    "runtime-main.js": "/react-portfolio-repo/static/js/runtime-main.f5d173f4.js",
-    "runtime-main.js.map": "/react-portfolio-repo/static/js/runtime-main.f5d173f4.js.map",
-    "static/js/2.0a09bac3.chunk.js": "/react-portfolio-repo/static/js/2.0a09bac3.chunk.js",
-    "static/js/2.0a09bac3.chunk.js.map": "/react-portfolio-repo/static/js/2.0a09bac3.chunk.js.map",
-    "static/js/3.a445f5f9.chunk.js": "/react-portfolio-repo/static/js/3.a445f5f9.chunk.js",
-    "static/js/3.a445f5f9.chunk.js.map": "/react-portfolio-repo/static/js/3.a445f5f9.chunk.js.map",
+    "main.css": "/react-portfolio-repo/static/css/main.bf23f1e8.chunk.css",
+    "main.js": "/react-portfolio-repo/static/js/main.0da6a830.chunk.js",
+    "main.js.map": "/react-portfolio-repo/static/js/main.0da6a830.chunk.js.map",
+    "runtime-main.js": "/react-portfolio-repo/static/js/runtime-main.63ee17e9.js",
+    "runtime-main.js.map": "/react-portfolio-repo/static/js/runtime-main.63ee17e9.js.map",
+    "static/js/2.8afef9c5.chunk.js": "/react-portfolio-repo/static/js/2.8afef9c5.chunk.js",
+    "static/js/2.8afef9c5.chunk.js.map": "/react-portfolio-repo/static/js/2.8afef9c5.chunk.js.map",
     "index.html": "/react-portfolio-repo/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/react-portfolio-repo/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.0a09bac3.chunk.js.LICENSE.txt": "/react-portfolio-repo/static/js/2.0a09bac3.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/react-portfolio-repo/static/media/logo.6ce24c58.svg"
+    "static/css/main.bf23f1e8.chunk.css.map": "/react-portfolio-repo/static/css/main.bf23f1e8.chunk.css.map",
+    "static/js/2.8afef9c5.chunk.js.LICENSE.txt": "/react-portfolio-repo/static/js/2.8afef9c5.chunk.js.LICENSE.txt",
+    "static/media/Portfolio.css": "/react-portfolio-repo/static/media/work-day.658e90a8.png",
+    "static/media/Nav.css": "/react-portfolio-repo/static/media/meteor-shower.ce88447d.jpg",
+    "static/media/professional-pic.e707228f.jpg": "/react-portfolio-repo/static/media/professional-pic.e707228f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f5d173f4.js",
-    "static/js/2.0a09bac3.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.a78442d0.chunk.js"
+    "static/js/runtime-main.63ee17e9.js",
+    "static/js/2.8afef9c5.chunk.js",
+    "static/css/main.bf23f1e8.chunk.css",
+    "static/js/main.0da6a830.chunk.js"
   ]
 }
