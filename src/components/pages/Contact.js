@@ -40,6 +40,7 @@ function ContactForm() {
         <div className="title-container">
           <p>Contact</p>
         </div>
+        <p className="white">My Email: acromarti@gmail.com</p>
         <form className="form">
           <div className="name-container">
             <p className="subtitle">name:</p>
