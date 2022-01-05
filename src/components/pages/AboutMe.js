@@ -15,19 +15,18 @@ export default function AboutMe() {
                 </div>
                 <div className="description-container">
                     <p className="bio">
-                        I am a student at Rice University Coding Boot Camp currently living in Houston, Texas. I graduated from
-                        Michigan
-                        State University with a bachelor’s degree in computer science engineering. Some projects I have worked
-                        on include
-                        building a database and a gas mileage calculator for the Houston Health Department.
+                        Software developer with a bachelor’s degree in computer science engineering from Michigan State University. 
+                        Certificate in full stack web development from Rice University with proficiencies in front-end technologies 
+                        including HTML, CSS, React, along with back-end technologies like MongoDB, Express and MySQL. 
+                        Worked on a team of two to develop a MERN dashboard application that allowed users to interact 
+                        with multiple apps at the same time.
                     </p>
                     <p className="bio">
-                        My fascination for computers
-                        started around late middle school. Before I knew it, I would spend hours just surfing many websites
-                        looking at their
-                        creative styling and wondering how developers were able to create something so captivating. Some things
-                        I like to do
-                        in my free time is running, watching sports and anime, and playing video games.
+                        My extensive experience in web technologies, including problem solving 
+                        and project management, along with my thrill in taking on programming challenges 
+                        through debugging and researching make me a strong member to any engineering team.  
+                        My career goal is to become the project manager on large website projects, 
+                        both the creation of the site and its maintenance.
                     </p>
                 </div>
             </div>
