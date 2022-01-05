@@ -12,7 +12,7 @@ export default function Resume({ frontEnds, backEnds }) {
                 </div>
                 <div className="resume-link-container">
                 <p className="download-resume">View my</p>
-                <a href="https://docs.google.com/document/d/1TLqti3-iu9jxoKOcekPNUaVEM1h5wyra/edit?usp=sharing&ouid=106100799987657497926&rtpof=true&sd=true" target="_blank">
+                <a href="https://docs.google.com/document/d/1pOtu-kCdBCwRdxCYgKFPLzDtrtCffk3tSg_zD46mR0U/edit?usp=sharing" target="_blank">
                             <img className="resume-icon" src={resumeIcon} alt="Resume Icon" />
                         </a>
                 </div>                
